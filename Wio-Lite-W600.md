@@ -150,56 +150,60 @@ Please follow the [Seeed Board Intallation Guide](http://wiki.seeedstudio.com/Se
 Download the [W600 Library](https://github.com/Seeed-Studio/Grove_w600) from Seeed Github. Then Refer to [How to install library](http://wiki.seeedstudio.com/How_to_install_Arduino_Library) to install library for Arduino.
 
 
-- **Step 4.** Restart the Arduino IDE. Open the AP example, you can open it in the Arduino IDE by the path: **File --> Examples -->Grove_scd30_co2_sensor-->SCD30_Example**.
+- **Step 4.** Restart the Arduino IDE. Open the AP-Station example, you can open it in the Arduino IDE by the path: **File --> Examples -->seeed_W600_wifi-->ap_sta_mode**.
 
 
-![]()
+![](https://github.com/SeeedDocument/Wio-Lite-W600/raw/master/img/IDE-3.jpg)
 
 
-- **Step 4. Select your board and port**  
+- **Step 5.** Modify the code with your own AP and Station. In the following picture, Wio Lite W600 work as a station to join the AP marked **A** and the the Wio Lite W600 will creat the **B AP** for other devieces. You should change both AP name and password.
+
+
+![](https://github.com/SeeedDocument/Wio-Lite-W600/raw/master/img/IDE-4.jpg)
+
+
+
+
+- **Step 6. Select your board and port**  
+ 
 You'll need to select the entry in the **Tools > Board** menu that corresponds to your Arduino.
-Selecting a **Seeeduino Nano**.
+Selecting a **Seeeduino Wio Lite W600**.
 
 <div align="center">
 <figure>
-  <img src="https://github.com/SeeedDocument/Seeeduino-Nano/raw/master/img/IDE-2.jpg"/>
-  <figcaption><b>Figure 11</b>. <i>Choose the right board</i></figcaption>
+  <img src="https://github.com/SeeedDocument/Wio-Lite-W600/raw/master/img/IDE-2.jpg"/>
+  <figcaption><i>Choose the right board</i></figcaption>
 </figure>
 </div>
 
 
 Select the serial device of the Arduino board from the Tools | Serial Port menu. This is likely to be COM3 or higher (**COM1** and **COM2** are usually reserved for hardware serial ports). To find out, you can disconnect your Arduino board and re-open the menu; the entry that disappears should be the Arduino board. Reconnect the board and select that serial port.
 
-<div align="center">
-<figure>
-  <img src="https://github.com/SeeedDocument/Seeeduino-Nano/raw/master/img/IDE-3.jpg"/>
-  <figcaption><b>Figure 12</b>. <i>Choose the right port</i></figcaption>
-</figure>
-</div>
 
 
 
 
 
 
-- **Step 5.Upload the program**  
+
+- **Step 7.Upload the code**  
 Now, simply click the "Upload" button in the environment. Wait a few seconds and if the upload is successful, the message "Done uploading." will appear in the status bar.
 
 <div align="center">
 <figure>
   <img src="https://raw.githubusercontent.com/SeeedDocument/Seeeduino_GPRS/master/img/upload_image.png"/>
-  <figcaption><b>Figure 13</b>. <i>Upload the code</i></figcaption>
+  <figcaption><i>Upload the code</i></figcaption>
 </figure>
 </div>
 
 
-A few seconds after the upload finishes, you should see the pin 13 (L) LED on the board start to blink (in orange). If it does, congratulations! You've gotten Arduino up-and-running. If you have problems, please see the troubleshooting suggestions.
+A few seconds after the upload finishes, then the Wio Lite W600 will access the AP you set and you can use your phone to accees the AP created by Wio Lite W600
 
 
 ## Resources
 
-- **[ZIP]** [Seeeduino nano Eagle file](https://github.com/SeeedDocument/Seeeduino-Nano/raw/master/res/Seeeduino%20nano.zip)
-- **[PDF]** [ATmega328-datasheet](https://github.com/SeeedDocument/Seeeduino-Nano/raw/master/res/ATmega328-datasheet.pdf)
+- **[ZIP]** [Wio Lite W600 Eagle file](https://github.com/SeeedDocument/Wio-Lite-W600/raw/master/res/Wio-Lite-W600.zip)
+- **[PDF]** [W600-datasheet](https://github.com/SeeedDocument/W600_Module/blob/master/res/WM_W60X_SDK_User%20Manual_V1.0.0.pdf)
 
 
 
